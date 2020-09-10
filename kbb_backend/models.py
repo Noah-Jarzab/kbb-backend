@@ -12,3 +12,10 @@ class Shoe(models.Model):
 
     def __str__(self):
         return self.name
+
+class Collection(models.Model):
+    shoe = models.ForeignKey(Shoe, on_delete=models.CASCADE, related_name='collections')
+    title = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.title
