@@ -1,1 +1,1 @@
-web: gunicorn kbb-backend.wsgi
+web: gunicorn kbb_backend_django.wsgi
