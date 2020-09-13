@@ -1,0 +1,1 @@
+web: gunicorn kbb-backend.wsgi
